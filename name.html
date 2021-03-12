@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ТЗ проверка имени</title>
+</head>
+
+<body>
+	<script>
+		function check(){
+			if (document.f1.entryname.value == "Вячеслав"){
+				document.f1.result.value = "Привет, Вячеслав";
+			
+		} else { document.f1.result.value = "Нет такого имени"; }
+		}
+	</script>
+	<form method="POST" name="f1">
+		<input type="text" name="entryname"><span>Введи имя</span> <br>
+		<input type="button" name="checker" value="Проверь имя" onClick="check()"><br>
+		<input type="text" name="result"><span>Получи результат</span> 
+	</form>
+</body>
+</html>
